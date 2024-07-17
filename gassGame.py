@@ -54,7 +54,7 @@ def main():
             else:
                 print("האות לא נמצאה במילה.")
                 attempts_left -= 1
-        else: 
+        else:
             if guess == word_to_guess:
                 print("כל הכבוד! ניחשת את המילה הנכונה -", word_to_guess)
                 break
