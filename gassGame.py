@@ -1,3 +1,4 @@
+# gess The word game
 import random
 WORD_FILE = "words.txt"
 
