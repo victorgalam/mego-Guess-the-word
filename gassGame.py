@@ -35,20 +35,20 @@ def main():
 
     word_to_guess = words[int(player1) % len(words)]
 
-    print("\nמילה נבחרה! שחקן 2, עכשיו תתחילו לנחש.")
+    print("\nמילה נבחרה! שחקן 2, עכשיו תורך .")
 
     guessed_letters = []
     attempts_left = 6
 
     while attempts_left > 0:
         print("\nניסיון מספר", 6 - attempts_left + 1)
-        print("מילה עד כה:", display_word(word_to_guess, guessed_letters))
+        print("מילה נבחרה:", display_word(word_to_guess, guessed_letters))
 
         guess = input("נחש אות או מילה: ").strip().lower()
 
         if len(guess) == 1:
             if guess in guessed_letters:
-                print("כבר ניחשת את האות הזו בעבר.")
+                print("כבר ניחשת את האות הזו.")
             elif guess in word_to_guess:
                 print("נכון! האות מופיעה במילה.")
                 guessed_letters.append(guess)
